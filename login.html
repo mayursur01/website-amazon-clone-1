@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #box {
+            width: 350px;
+            padding: 30px;
+            background: transparent ;
+            border-radius: 5%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            outline: red;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        }
+
+        button {
+            background: #1c87c9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+        
+          
+        }
+
+        button:hover {
+            background: #145a8f;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Log In</h1>
+        <input placeholder="USER ID" type="text">
+        <input placeholder="ENTER PASSWORD" type="password">
+        <button>LOGIN</button>
+    </div>
+</body>
+</html>
