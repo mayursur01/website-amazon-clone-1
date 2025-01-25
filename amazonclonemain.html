@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-like Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        nav {
+            background-color: #232f3e;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        #amazonlogo {
+            flex: 1;
+        }
+
+        #amazonlogo img {
+            height: 40px;
+        }
+
+        .search-bar {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 9px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #febd69;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .search-bar button:hover {
+            background-color: #f3a847;
+        }
+
+        #Home {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        #Home a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 8px;
+            padding: 9px;
+        }
+
+        #Home a:hover {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+        }
+
+        #offer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: transparent;
+            padding: 20px 0;
+        }
+
+        #offer img {
+            height: 40px;
+            margin: 10px;
+        }
+
+        #offer img:hover {
+            transform: scale(1.1);
+        }
+
+        #main {
+            height: 870px;
+            margin-top: 1px;
+            background-image: url('https://www.hindustantimes.com/ht-img/img/2024/09/29/1600x900/Amazon_Sale_2024_1727593065689_1727593079226.jpg');
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #boxbig, #boxbig2, #boxbig3, #boxbig4 {
+            height: 200px;
+            width: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(35, 47, 62, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+        }
+
+        #boxbig {
+            background-image: url('https://purepng.com/public/uploads/large/purepng.com-induction-stoveelectronicsinduction-stoveinduction-cooktop-941524676388wqj5a.png');
+        }
+
+        #boxbig2 {
+            background-image: url('https://www.seekpng.com/png/full/61-611718_t-shirt-2-t-shirt.png');
+        }
+
+        #boxbig3 {
+            background-image: url('https://3.bp.blogspot.com/-xuDmWQgMrtE/XM73OcwaJDI/AAAAAAAACr4/mxK9ht9Jz0QXuMoZGUh1lY1XoRDszHZQgCEwYBhgL/s1600/2.png');
+        }
+
+        #boxbig4 {
+            background-image: url('https://3.bp.blogspot.com/-xuDmWQgMrtE/XM73OcwaJDI/AAAAAAAACr4/mxK9ht9Jz0QXuMoZGUh1lY1XoRDszHZQgCEwYBhgL/s1600/2.png');
+        }
+
+        /* Hover effects */
+        #boxbig:hover, #boxbig2:hover, #boxbig3:hover, #boxbig4:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            filter: brightness(1.2);
+            background-color: aliceblue;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #febd69;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="amazonlogo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands, and more...">
+            <button>Search</button>
+        </div>
+        <div id="Home">
+            <a href="#">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+    </nav>
+
+    <div id="offer">
+        <img src="https://pngimg.com/d/smartphone_PNG8501.png" alt="Smartphone">
+        <img src="https://www.pngall.com/wp-content/uploads/1/Electronic.png" alt="Electronics">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Kitchen-mixer.png" alt="Kitchen Mixer">
+        <img src="https://png.pngtree.com/png-vector/20230408/ourmid/pngtree-led-tv-television-screen-vector-png-image_6673700.png" alt="TV">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png" alt="Prime Video">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MX_Player_Logo.png" alt="MX Player">
+        <img src="https://purepng.com/public/uploads/large/purepng.com-t-shirtclothingt-shirtfashion-dress-shirt-cloth-tshirt-631522326894filwv.png" alt="T-shirt">
+        <img src="https://pngimg.com/uploads/headphones/headphones_PNG101978.png" alt="Headphones">
+        <img src="https://seeklogo.com/images/A/amazon-fresh-logo-02542BA121-seeklogo.com.png" alt="Amazon Fresh">
+        <a href="cudeproject.html"><img src="https://icons.veryicon.com/png/o/miscellaneous/all-blue-icon/more-327.png" alt="More"></a>
+    </div>
+
+    <div id="main">
+        <div id="boxbig"></div>
+        <div id="boxbig2"></div>
+        <div id="boxbig3"></div>
+        <div id="boxbig4"></div>
+    </div>
+
+    <footer>
+        <p>&copy; All rights reserved. | <a href="terms.html">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
